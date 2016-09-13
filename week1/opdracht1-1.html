@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nurks - overzichtpagina</title>
+    <style>
+    header input {
+      height: 40px;
+      box-sizing: border-box;
+    }
+    header > button {
+      line-height: 40px;
+      padding: 10px;
+      border: 0;
+      background: none;
+    }
+
+    svg {
+      width: 20px;
+    }
+
+    ::-webkit-details-marker {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nurks</h1>
+      <aside>
+        <input type="text" placeholder="title... adres..."/>
+        <button>
+          <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M83.384,75.777l-31.305-22.08c2.413-3.484,3.837-7.704,3.837-12.254c0-11.901-9.682-21.583-21.583-21.583  c-11.901,0-21.583,9.682-21.583,21.583s9.682,21.584,21.583,21.584c6.633,0,12.572-3.013,16.534-7.737l31.365,22.122L83.384,75.777z   M34.332,61.027c-10.798,0-19.583-8.785-19.583-19.584c0-10.798,8.785-19.583,19.583-19.583s19.583,8.785,19.583,19.583  C53.915,52.242,45.13,61.027,34.332,61.027z"/></svg>
+        </button>
+        <div>
+          <button>big</button>
+          <button>small</button>
+        </div>
+        <section>
+          <button>Filteren/Sorteren<span></span></button>
+          <ul>
+            <li>Sortere op<div></div>
+              <ul>
+                <li><input type="radio" name="sort" value="nieuw" checked/>Nieuw</li>
+                <li><input type="radio" name="sort" value="oud"/>Oud</li>
+                <li><input type="radio" name="sort" value="kort"/>Kort</li>
+                <li><input type="radio" name="sort" value="lang"/>Lang</li>
+              </ul>
+            </li>
+
+            <li>schrijver<div></div>
+              <ul>
+                <li><input type="checkbox" name="schrijver" value="molovich"/>Molovich</li>
+                <li><input type="checkbox" name="schrijver" value="hoogeboom"/>Hoogeboom</li>
+                <li><input type="checkbox" name="schrijver" value="zeikwijf"/>Zeikwijf</li>
+              </ul>
+            </li>
+
+            <li>Genre<div></div>
+              <ul>
+                <li><input type="checkbox" name="genre" value="roman"/>Roman</li>
+                <li><input type="checkbox" name="genre" value="crime"/>Crime</li>
+                <li><input type="checkbox" name="genre" value="humor"/>Humor</li>
+              </ul>
+            </li>
+
+            <li>Categorie<div></div>
+              <ul>
+                <li><input type="checkbox" name="categorie" value="fictie"/>Fictie</li>
+                <li><input type="checkbox" name="categorie" value="non-fictie"/>Non-fictie</li>
+                <li><input type="checkbox" name="categorie" value="interview"/>Interview</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </header>
+    <main>
+      <article>
+        <h2>Tanka</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a orci et nunc lobortis mollis. Nam non justo quis diam finibus pulvinar. Cras a nulla mi. Cras laoreet erat nec massa placerat, at eleifend dolor tempus. Ut suscipit, dui eget tempor hendrerit, massa leo lobortis risus, sed tristique metus ante et turpis. Maecenas varius vehicula nulla in elementum. Aliquam non augue laoreet, iaculis massa sit amet, facilisis ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam pulvinar elit justo, non interdum sapien bibendum vel. Vestibulum iaculis, ex ac sollicitudin porta, diam ante rhoncus neque, quis posuere ligula odio sed sem. In fermentum sem id finibus sodales. Nam posuere eros a odio pulvinar rhoncus. Donec laoreet massa sed auctor posuere.</p>
+        <small>8 sept - door <a href="#">Molovich</a><svg version="1.1" x="0px" y="0px" viewBox="0 0 48 60" enable-background="new 0 0 48 48" xml:space="preserve"><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g><path fill="#000000" d="M24,38.052l-0.503-0.296c-0.307-0.181-7.573-4.506-11.719-11.059c-2.203-3.479-2.888-7.153-1.93-10.343    c0.785-2.611,2.605-4.676,5.126-5.81c0.88-0.396,1.788-0.597,2.699-0.597c2.917,0,5.181,2.028,6.327,3.321    c1.147-1.293,3.41-3.321,6.328-3.321c0.911,0,1.819,0.2,2.698,0.597c2.521,1.134,4.342,3.198,5.127,5.81    c0.958,3.189,0.272,6.862-1.93,10.344c-4.146,6.552-11.412,10.877-11.719,11.058L24,38.052z M17.672,11.932    c-0.629,0-1.262,0.143-1.885,0.423c-1.988,0.895-3.423,2.519-4.04,4.571c-0.79,2.63-0.184,5.724,1.707,8.711    c3.287,5.194,8.852,9.01,10.546,10.096c1.694-1.088,7.265-4.911,10.547-10.096c1.89-2.987,2.497-6.081,1.706-8.711    c-0.617-2.053-2.052-3.677-4.041-4.571c-0.623-0.28-1.256-0.423-1.884-0.423c-3.144,0-5.479,3.448-5.502,3.483L24,16.653    l-0.825-1.238C23.152,15.382,20.796,11.932,17.672,11.932z"/></g></switch><text>11</text></svg>
+        </small>
+        <a href="#">lees verder</a>
+      </article>
+      <article>
+        <h2>Zoon</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a orci et nunc lobortis mollis. Nam non justo quis diam finibus pulvinar. Cras a nulla mi. Cras laoreet erat nec massa placerat, at eleifend dolor tempus. Ut suscipit, dui eget tempor hendrerit, massa leo lobortis risus, sed tristique metus ante et turpis. Maecenas varius vehicula nulla in elementum. Aliquam non augue laoreet, iaculis massa sit amet, facilisis ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam pulvinar elit justo, non interdum sapien bibendum vel. Vestibulum iaculis, ex ac sollicitudin porta, diam ante rhoncus neque, quis posuere ligula odio sed sem. In fermentum sem id finibus sodales. Nam posuere eros a odio pulvinar rhoncus. Donec laoreet massa sed auctor posuere.</p>
+        <small>8 sept - door <a href="#">Molovich</a><svg version="1.1" x="0px" y="0px" viewBox="0 0 48 60" enable-background="new 0 0 48 48" xml:space="preserve"><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g><path fill="#000000" d="M24,38.052l-0.503-0.296c-0.307-0.181-7.573-4.506-11.719-11.059c-2.203-3.479-2.888-7.153-1.93-10.343    c0.785-2.611,2.605-4.676,5.126-5.81c0.88-0.396,1.788-0.597,2.699-0.597c2.917,0,5.181,2.028,6.327,3.321    c1.147-1.293,3.41-3.321,6.328-3.321c0.911,0,1.819,0.2,2.698,0.597c2.521,1.134,4.342,3.198,5.127,5.81    c0.958,3.189,0.272,6.862-1.93,10.344c-4.146,6.552-11.412,10.877-11.719,11.058L24,38.052z M17.672,11.932    c-0.629,0-1.262,0.143-1.885,0.423c-1.988,0.895-3.423,2.519-4.04,4.571c-0.79,2.63-0.184,5.724,1.707,8.711    c3.287,5.194,8.852,9.01,10.546,10.096c1.694-1.088,7.265-4.911,10.547-10.096c1.89-2.987,2.497-6.081,1.706-8.711    c-0.617-2.053-2.052-3.677-4.041-4.571c-0.623-0.28-1.256-0.423-1.884-0.423c-3.144,0-5.479,3.448-5.502,3.483L24,16.653    l-0.825-1.238C23.152,15.382,20.796,11.932,17.672,11.932z"/></g></switch><text>11</text></svg>
+        </small>
+        <a href="#">lees verder</a>
+      </article>
+      <article>
+        <h2>Zombie</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a orci et nunc lobortis mollis. Nam non justo quis diam finibus pulvinar. Cras a nulla mi. Cras laoreet erat nec massa placerat, at eleifend dolor tempus. Ut suscipit, dui eget tempor hendrerit, massa leo lobortis risus, sed tristique metus ante et turpis. Maecenas varius vehicula nulla in elementum. Aliquam non augue laoreet, iaculis massa sit amet, facilisis ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam pulvinar elit justo, non interdum sapien bibendum vel. Vestibulum iaculis, ex ac sollicitudin porta, diam ante rhoncus neque, quis posuere ligula odio sed sem. In fermentum sem id finibus sodales. Nam posuere eros a odio pulvinar rhoncus. Donec laoreet massa sed auctor posuere.</p>
+        <small>8 sept - door <a href="#">Molovich</a><svg version="1.1" x="0px" y="0px" viewBox="0 0 48 60" enable-background="new 0 0 48 48" xml:space="preserve"><switch><foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1" height="1"/><g><path fill="#000000" d="M24,38.052l-0.503-0.296c-0.307-0.181-7.573-4.506-11.719-11.059c-2.203-3.479-2.888-7.153-1.93-10.343    c0.785-2.611,2.605-4.676,5.126-5.81c0.88-0.396,1.788-0.597,2.699-0.597c2.917,0,5.181,2.028,6.327,3.321    c1.147-1.293,3.41-3.321,6.328-3.321c0.911,0,1.819,0.2,2.698,0.597c2.521,1.134,4.342,3.198,5.127,5.81    c0.958,3.189,0.272,6.862-1.93,10.344c-4.146,6.552-11.412,10.877-11.719,11.058L24,38.052z M17.672,11.932    c-0.629,0-1.262,0.143-1.885,0.423c-1.988,0.895-3.423,2.519-4.04,4.571c-0.79,2.63-0.184,5.724,1.707,8.711    c3.287,5.194,8.852,9.01,10.546,10.096c1.694-1.088,7.265-4.911,10.547-10.096c1.89-2.987,2.497-6.081,1.706-8.711    c-0.617-2.053-2.052-3.677-4.041-4.571c-0.623-0.28-1.256-0.423-1.884-0.423c-3.144,0-5.479,3.448-5.502,3.483L24,16.653    l-0.825-1.238C23.152,15.382,20.796,11.932,17.672,11.932z"/></g></switch><text>11</text></svg>
+        </small>
+        <a href="#">lees verder</a>
+      </article>
+    </main>
+    <footer>© 2016 <a href="#">nurks</a></footer>
+  </body>
+</html>

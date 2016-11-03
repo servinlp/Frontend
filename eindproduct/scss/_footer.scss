@@ -1,0 +1,14 @@
+footer{
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: $darkgray;
+  h1{
+    margin-bottom: 0;
+    display: inline-block;
+    a{
+      color: $mainblue;
+      text-decoration: none;
+    }
+  }
+}

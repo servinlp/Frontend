@@ -7,6 +7,9 @@ var allFilters = document.querySelectorAll('header section > ul > li'),
     sort = document.querySelectorAll("header > p button li"),
     later = document.querySelectorAll(".later"),
     download = document.querySelectorAll(".download"),
+    figure = document.querySelectorAll(".beroemd > figure")[0],
+    man = document.querySelectorAll(".beroemd > figure img")[0],
+    beroemdd = document.querySelectorAll(".beroemdd")[0],
     x;
 
 if (allFilters[0]) {
@@ -19,11 +22,8 @@ if (allFilters[0]) {
   for (var i = 0; i < filterChild.length; i++) {
     filterChild[i].addEventListener("click", function(event){
       event.stopPropagation();
-      // console.log(this);
       var input = this.querySelectorAll("input")[0],
       value = input.value;
-      // console.log(input);
-      // console.log(input.checked);
       if (input.checked) {
 
       }
@@ -120,6 +120,16 @@ if (later[0]) {
       });
     });
   }
+
+  randomPicture();
+  man.addEventListener("webkitAnimationEnd", function(){
+    figure.classList.remove("animate");
+    randomPicture();
+  });
+  man.addEventListener("AnimationEnd", function(){
+    figure.classList.remove("animate");
+    randomPicture();
+  });
 }
 
 function afterDownload(that){
@@ -130,4 +140,46 @@ function afterDownload(that){
     p.innerHTML = "Open";
     that.classList.add("done");
   }, 2000);
+}
+
+function randomPicture(){
+  var time = Math.round(Math.random() * 10000);
+  setTimeout(function(){
+    figure.classList.add("animate");
+  }, time);
+}
+
+
+if (beroemdd) {
+  var body = document.body,
+  html = document.documentElement,
+  HEIGHT = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ),
+  windowHeight = window.innerHeight,
+  activateAt = (HEIGHT - windowHeight) - 100,
+  nth = 0,
+  classes = ["second", "third"],
+  figure = document.querySelectorAll("main > figure figure")[0];
+
+  window.addEventListener("scroll", scroll);
+
+  figure.addEventListener("webkitAnimationEnd", function(){
+    main.classList.remove("animate");
+    if (nth == 1) {
+      main.classList.remove(classes[0])
+    }
+    nth += 1;
+
+    HEIGHT = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+    activateAt = (HEIGHT - windowHeight) - 100;
+    window.scrollTo(0,0);
+  });
+}
+
+function scroll(){
+  if (((window.pageYOffset || html.scrollTop)  - (html.clientTop || 0)) > activateAt && nth < 2 && !main.classList.contains("animate")) {
+    main.classList.add("animate");
+    setTimeout(function(){
+      main.classList.add(classes[nth]);
+    }, 600);
+  }
 }
